@@ -3,140 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Guilherme Costa</title>
+    <title data-en="Guilherme Costa's Portfolio" data-pt="Portfólio de Guilherme Costa">Portfólio de Guilherme Costa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <div class="container">
-            <h1>Guilherme Fernandes Costa</h1>
-            <p>Desenvolvedor de Automação e Back-end</p>
+            <h1 data-en="Guilherme Costa" data-pt="Guilherme Costa">Guilherme Costa</h1>
+            <p data-en="Automation and Back-end Developer" data-pt="Desenvolvedor de Automação e Back-end">Desenvolvedor de Automação e Back-end</p>
+            
+            <!-- Menu de Navegação com Botões de Idioma -->
             <nav>
                 <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#educacao">Educação</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre" data-en="About Me" data-pt="Sobre Mim">Sobre Mim</a></li>
+                    <li><a href="#habilidades" data-en="Skills" data-pt="Habilidades">Habilidades</a></li>
+                    <li><a href="#projetos" data-en="Projects" data-pt="Projetos">Projetos</a></li>
+                    <li><a href="#experiencia" data-en="Experience" data-pt="Experiência">Experiência</a></li>
+                    <li><a href="#educacao" data-en="Education" data-pt="Educação">Educação</a></li>
+                    <li><a href="#contato" data-en="Contact" data-pt="Contato">Contato</a></li>
                 </ul>
             </nav>
+
+            <!-- Botões de Seleção de Idioma -->
+            <div class="language-switcher">
+                <button onclick="setLanguage('pt')" id="btn-pt">PT</button>
+                <button onclick="setLanguage('en')" id="btn-en">EN</button>
+            </div>
         </div>
     </header>
 
+    <!-- Seção Sobre Mim -->
     <section id="sobre">
         <div class="container">
-            <h2>Sobre Mim</h2>
-            <img src="portifolio.jpg" alt="Foto de Guilherme">
-            <p>
+            <h2 data-en="About Me" data-pt="Sobre Mim">Sobre Mim</h2>
+            <img src="portifolio.jpg" alt="Foto de Guilherme" class="profile-photo">
+            <p data-en="Hello! I am Guilherme Fernandes Claudino Costa, a 19-year-old ambitious individual passionate about studying and the power of knowledge. I focus on developing automations, websites, and back-end systems using technologies like SQL, APIs, JavaScript, and Python. I spent a year studying abroad in Michigan, USA, which broadened my perspective and professional skills. My dream is to grow in the programming field, always bringing creative ideas and effective solutions to the challenges I encounter."
+               data-pt="Olá! Sou Guilherme Fernandes Claudino Costa, um jovem ambicioso de 19 anos apaixonado pelo estudo e pelo poder do conhecimento. Tenho foco no desenvolvimento de automações, websites e back-end, utilizando tecnologias como SQL, API, JavaScript e Python. Realizei um ano de intercâmbio em Michigan, EUA, o que ampliou minha visão e habilidades. Meu sonho é crescer na área de programação, sempre trazendo ideias criativas e soluções eficazes para os desafios que encontro.">
                 Olá! Sou Guilherme Fernandes Claudino Costa, um jovem ambicioso de 19 anos apaixonado pelo estudo e pelo poder do conhecimento. Tenho foco no desenvolvimento de automações, websites e back-end, utilizando tecnologias como SQL, API, JavaScript e Python. Realizei um ano de intercâmbio em Michigan, EUA, o que ampliou minha visão e habilidades. Meu sonho é crescer na área de programação, sempre trazendo ideias criativas e soluções eficazes para os desafios que encontro.
             </p>
         </div>
     </section>
 
+    <!-- Seção Habilidades -->
     <section id="habilidades">
         <div class="container">
-            <h2>Habilidades</h2>
+            <h2 data-en="Skills" data-pt="Habilidades">Habilidades</h2>
             <div class="skills">
                 <div class="skill">
-                    <h3>Python</h3>
+                    <h3 data-en="Python" data-pt="Python">Python</h3>
                 </div>
                 <div class="skill">
-                    <h3>JavaScript</h3>
+                    <h3 data-en="JavaScript" data-pt="JavaScript">JavaScript</h3>
                 </div>
                 <div class="skill">
-                    <h3>SQL</h3>
+                    <h3 data-en="SQL" data-pt="SQL">SQL</h3>
                 </div>
                 <div class="skill">
-                    <h3>APIs Básicas</h3>
+                    <h3 data-en="Basic API" data-pt="API Básico">APIs Básicas</h3>
                 </div>
                 <div class="skill">
-                    <h3>PHP Básico</h3>
+                    <h3 data-en="Basic PHP" data-pt="PHP Básico">PHP Básico</h3>
                 </div>
                 <div class="skill">
-                    <h3>Gerenciamento de Armazenagem</h3>
+                    <h3 data-en="Warehouse Management" data-pt="Gerenciamento de Armazenagem">Gerenciamento de Armazenagem</h3>
                 </div>
                 <div class="skill">
-                    <h3>Gestão de Estoque</h3>
+                    <h3 data-en="Inventory Management" data-pt="Gestão de Estoque">Gestão de Estoque</h3>
                 </div>
                 <div class="skill">
-                    <h3>Matemática Aplicada</h3>
+                    <h3 data-en="Applied Mathematics" data-pt="Matemática Aplicada">Matemática Aplicada</h3>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Seção Projetos -->
     <section id="projetos">
         <div class="container">
-            <h2>Projetos</h2>
+            <h2 data-en="Projects" data-pt="Projetos">Projetos</h2>
             <div class="project-list">
                 <div class="project">
-                    <h3>Site de inscrição para evento</h3>
-                    <p>Site de inscrição com pagamento incluso e banco de dados MySQL</p>
-                    <a href="https://github.com/seu-usuario/projeto1" target="_blank">Ver no GitHub</a>
+                    <h3 data-en="Project One" data-pt="Projeto Um">Projeto Um</h3>
+                    <p data-en="A web automation tool developed using Python and JavaScript to streamline repetitive tasks."
+                       data-pt="Uma ferramenta de automação web desenvolvida com Python e JavaScript para agilizar tarefas repetitivas.">
+                        Uma ferramenta de automação web desenvolvida com Python e JavaScript para agilizar tarefas repetitivas.
+                    </p>
+                    <a href="https://github.com/seu-usuario/projeto1" target="_blank" data-en="View on GitHub" data-pt="Ver no GitHub">Ver no GitHub</a>
                 </div>
                 <div class="project">
-                    <h3>Nome do Projeto 2</h3>
-                    <p>Descrição breve do projeto, tecnologias utilizadas e objetivos alcançados.</p>
-                    <a href="https://github.com/seu-usuario/projeto2" target="_blank">Ver no GitHub</a>
+                    <h3 data-en="Project Two" data-pt="Projeto Dois">Projeto Dois</h3>
+                    <p data-en="A responsive website built with HTML, CSS, and JavaScript to showcase portfolio projects."
+                       data-pt="Um site responsivo construído com HTML, CSS e JavaScript para exibir projetos de portfólio.">
+                        Um site responsivo construído com HTML, CSS e JavaScript para exibir projetos de portfólio.
+                    </p>
+                    <a href="https://github.com/seu-usuario/projeto2" target="_blank" data-en="View on GitHub" data-pt="Ver no GitHub">Ver no GitHub</a>
                 </div>
+                <!-- Adicione mais projetos conforme necessário -->
             </div>
         </div>
     </section>
 
+    <!-- Seção Experiência -->
     <section id="experiencia">
         <div class="container">
-            <h2>Experiência</h2>
+            <h2 data-en="Experience" data-pt="Experiência">Experiência</h2>
             <div class="experience-item">
-                <h3>Intercâmbio em Michigan, USA</h3>
-                <p>Durante um ano, estudei em Michigan, onde melhorei minhas habilidades em inglês e adquiri novas perspectivas culturais e profissionais.</p>
+                <h3 data-en="Exchange Program in Michigan, USA" data-pt="Intercâmbio em Michigan, EUA">Intercâmbio em Michigan, EUA</h3>
+                <p data-en="Spent a year studying in Michigan, USA, enhancing my English skills and gaining valuable cultural and professional insights."
+                   data-pt="Passou um ano estudando em Michigan, EUA, aprimorando minhas habilidades em inglês e adquirindo valiosos conhecimentos culturais e profissionais.">
+                    Passou um ano estudando em Michigan, EUA, aprimorando minhas habilidades em inglês e adquirindo valiosos conhecimentos culturais e profissionais.
+                </p>
             </div>
+            <!-- Adicione mais experiências conforme necessário -->
         </div>
     </section>
 
+    <!-- Seção Educação -->
     <section id="educacao">
         <div class="container">
-            <h2>Educação</h2>
-            <ul>
-                <li><strong>Curso de Python</strong> - Curso em Video, 2024</li>
-                <li><strong>Curso de JavaScript</strong> - Curso em Video, 2024</li>
-                <li><strong>Curso de SQL</strong> - Curso em Video, 2024</li>
-                <li><strong>Curso Básico de API</strong> - Curso em Video, 2024</li>
-                <li><strong>Curso Básico de PHP</strong> - Curso em Video, 2024</li>
-                <li><strong>Gerenciamento de Armazenagem</strong> - ALB LOGISTICA, 2024</li>
-                <li><strong>Gestão de Estoque</strong> - ALB LOGISTICA, 2024</li>
-                <li><strong>Matemática Aplicada</strong> - Curso em Video, 2024</li>
+            <h2 data-en="Education" data-pt="Educação">Educação</h2>
+            <li><strong>Curso de JavaScript</strong> - Curso em Video, 2024</li>
+            <li><strong>Curso de SQL</strong> - Curso em Video, 2024</li>
+            <li><strong>Curso Básico de API</strong> - Curso em Video, 2024</li>
+            <li><strong>Curso Básico de PHP</strong> - Curso em Video, 2024</li>
+            <li><strong>Gerenciamento de Armazenagem</strong> - ALB LOGISTICA, 2024</li>
+            <li><strong>Gestão de Estoque</strong> - ALB LOGISTICA, 2024</li>
+            <li><strong>Matemática Aplicada</strong> - Curso em Video, 2024</li>
+
             </ul>
         </div>
     </section>
 
+    <!-- Seção Contato -->
     <section id="contato">
         <div class="container">
-            <h2>Contato</h2>
+            <h2 data-en="Contact" data-pt="Contato">Contato</h2>
             <form action="mailto:seu-email@example.com" method="post" enctype="text/plain">
-                <label for="nome">Nome:</label>
+                <label for="nome" data-en="Name" data-pt="Nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail:</label>
+                <label for="email" data-en="Email" data-pt="E-mail">E-mail:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="mensagem">Mensagem:</label>
+                <label for="mensagem" data-en="Message" data-pt="Mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" data-en="Send" data-pt="Enviar">Enviar</button>
             </form>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/guilherme-fernandes-564059215/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/guilherme-fernandes-564059215/" target="_blank" data-en="LinkedIn" data-pt="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/seu-usuario" target="_blank" data-en="GitHub" data-pt="GitHub">GitHub</a>
 
             </div>
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Guilherme Fernandes Claudino Costa. Todos os direitos reservados.</p>
+            <p data-en="© 2024 Guilherme Fernandes Claudino Costa. All rights reserved."
+               data-pt="© 2024 Guilherme Fernandes Claudino Costa. Todos os direitos reservados.">
+                © 2024 Guilherme Fernandes Claudino Costa. Todos os direitos reservados.
+            </p>
         </div>
     </footer>
+
+    <!-- Script de Alternância de Idioma -->
+    <script src="language.js"></script>
 </body>
 </html>
